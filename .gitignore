@@ -1,4 +1,7 @@
 ```
+# Dependencies
+node_modules/
+
 # Environment variables
 .env
 .env.local
@@ -10,31 +13,31 @@
 # Temporary files
 *.tmp
 *.swp
-*.swo
-
-# Dependencies
-node_modules/
-.venv/
-venv/
-__pycache__/
-.mypy_cache/
-.pytest_cache/
-.julia/
-zig*/
-
-# Build artifacts
-dist/
-build/
-target/
-
-# OS generated files
-.DS_Store
-Thumbs.db
 
 # Coverage reports
 coverage/
 htmlcov/
+*.coverage
+
+# Build outputs
+dist/
+build/
+target/
+
+# Python specific
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+pip-log.txt
+pip-delete-this-directory.txt
+.tox/
 .coverage
+.nox/
 
 # Compressed files
 *.zip
@@ -59,4 +62,32 @@ htmlcov/
 *.tar.bz2
 *.tar.xz
 *.tar.zst
+
+# System files
+.DS_Store
+Thumbs.db
+
+# IDE specific
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# MyPy cache
+.mypy_cache/
+# PyTest cache
+.pytest_cache/
+
+# Gradle
+.gradle/
+
+# Compiled Binary files
+*.class
+*.o
+*.exe
+*.dll
+*.so
+*.a
+*.obj
+*.out
 ```
