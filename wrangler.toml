@@ -1,11 +1,6 @@
 name = "redirect-pages"
 compatibility_date = "2024-01-01"
-pages_build_output_dir = "./dist"
 
-# KV Namespace binding
-# 你需要先创建 KV namespace: wrangler kv:namespace create "REDIRECT_TARGET"
-# 然后将生成的 id 填入下方
-[[kv_namespaces]]
-binding = "REDIRECT_TARGET"
-id = "YOUR_KV_NAMESPACE_ID"
-preview_id = "YOUR_PREVIEW_KV_NAMESPACE_ID"
+# 注意：如果你通过 Cloudflare Dashboard (网页端) 部署，
+# 请在 Pages 项目设置 -> Functions -> KV namespace bindings 中手动绑定 KV。
+# 变量名必须为：REDIRECT_TARGET
