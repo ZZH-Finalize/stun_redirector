@@ -1,10 +1,10 @@
-name = "redirect-pages"
+name = "stun"
+main = "main.js"
 compatibility_date = "2024-01-01"
 
-# KV Namespace Binding
-# 确保这里的变量名 REDIRECT_TARGET 与代码中的 env.REDIRECT_TARGET 一致
-[[kv_namespaces]]
-binding = "REDIRECT_TARGET"
-id = "YOUR_KV_NAMESPACE_ID_HERE" 
-# 注意：请将上面的 YOUR_KV_NAMESPACE_ID_HERE 替换为你实际的 KV Namespace ID
-# 获取方法: 运行 npx wrangler kv:namespace list 或在 Cloudflare  dashboard 查看
+# KV Namespace 绑定 (需在 dashboard 或命令行绑定)
+# 命令行: wrangler kv:namespace create "REDIRECT_TARGET"
+# 然后在此处添加:
+# [[kv_namespaces]]
+# binding = "REDIRECT_TARGET"
+# id = "你的_namespace_id"
