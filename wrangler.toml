@@ -1,10 +1,3 @@
 name = "stun"
 main = "main.js"
 compatibility_date = "2024-01-01"
-
-# KV Namespace 绑定 (需在 dashboard 或命令行绑定)
-# 命令行: wrangler kv:namespace create "REDIRECT_TARGET"
-# 然后在此处添加:
-# [[kv_namespaces]]
-# binding = "REDIRECT_TARGET"
-# id = "你的_namespace_id"
