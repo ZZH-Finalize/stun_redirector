@@ -9,5 +9,5 @@ export async function onRequest(context) {
     return new Response("Redirect target URL not configured in KV", { status: 500 });
   }
   
-  return Response.redirect(targetUrl, 302);
+  return Response.redirect(targetUrl, 307);
 }
